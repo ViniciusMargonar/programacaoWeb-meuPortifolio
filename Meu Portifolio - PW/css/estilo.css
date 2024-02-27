@@ -93,13 +93,16 @@ body{
     margin-top: 0%;
 }
 
+.profile-pic-container {
+    text-align: center;
+}
+
 .profile-pic {
-    float: left;
+    display: inline-block;
     padding: 30px;
     width: 200px;
     height: 200px;
     border-radius: 100%;
     object-fit: cover;
-    margin-right: 20px;
     margin-top: 5px;
 }

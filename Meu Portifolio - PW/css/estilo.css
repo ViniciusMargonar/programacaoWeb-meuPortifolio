@@ -47,10 +47,22 @@ body{
     max-width: 90%;
     padding: 0 20px;
     margin: 0 auto;
+    
 }
 
 .main-section h2{
-    padding-top: 5px;
+    padding-top: 50px;
+    font-size: 50px;    
+    text-align: center;
+    
+}
+
+.main-section p{
+    padding-top: 30px;
+    font-size: 22px;    
+    justify-content: center;
+    text-align: center;
+    
 }
 
 .clearfix::after{
@@ -83,8 +95,9 @@ body{
 
 .profile-pic {
     float: left;
-    width: 150px;
-    height: 150px;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     object-fit: cover;
     margin-right: 20px;

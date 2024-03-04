@@ -18,6 +18,14 @@ a{
     text-decoration: none;
 }
 
+h1{
+    text-align: center; 
+    padding: 30px;
+    font-size: 30px;    
+    color: #06202b;       
+
+}
+
 .site-header, .site-footer {
     background-color: #ffffff;
     color: #06202b;
@@ -80,7 +88,7 @@ a{
 
 .about-me-section h1{
     padding-top: 120px;
-    font-size: 24px;    
+    font-size: 30px;    
     justify-content: center;
     text-align: center;
     font-family: Europa, sans-serif;
@@ -117,19 +125,20 @@ a{
     content: "";
     display: table;
     clear: both;
-    height: 250px;
+    height: 150px;
 }
 
 .section3 h1{
-    padding: 10px;
-    font-size: 24px;    
+    padding: 30px;
+    font-size: 30px;    
     justify-content: center;
     text-align: center;
     font-family: Europa, sans-serif;
     margin-top: -10rem;
-    
+    color: #06202b;    
 
 }
+
 
 .project-grid{   /* Wrapper */
     display: grid;
@@ -140,6 +149,15 @@ a{
     margin: 0 auto;   
     
 }
+
+.grid-languages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
 
 .project-item{ 
     display: grid;

@@ -6,8 +6,16 @@
 body{
     font-family: Europa, sans-serif;
     background-color: #ffffff;
-    color: #06202b
-    ;
+    color: #06202b;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 .site-header, .site-footer {
@@ -112,19 +120,47 @@ body{
     height: 250px;
 }
 
+.section3 h1{
+    padding: 10px;
+    font-size: 24px;    
+    justify-content: center;
+    text-align: center;
+    font-family: Europa, sans-serif;
+    margin-top: -10rem;
+    
+
+}
+
 .project-grid{   /* Wrapper */
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    text-align: center; 
-    height: 250px;
-
+    grid-gap: 10px;
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1070px;
+    margin: 0 auto;   
     
 }
 
-.project-item{
-    background-color: #f2f2f2;
-    box-shadow: 0 0 10px black;
+.project-item{ 
+    display: grid;
+        
+}
+
+.project-item img{
+    grid-column: 1;  
+    width: 350px;
+    height: 350px;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+.project-item a{
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
 }
 
 .logo-pic {
@@ -160,6 +196,5 @@ body{
     margin-bottom: -6rem;
     margin-top: 0.5rem;
     padding-top: 1rem;
-    
     
 }

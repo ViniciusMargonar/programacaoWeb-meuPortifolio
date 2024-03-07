@@ -159,8 +159,9 @@ h1 {
     grid-gap: 10px;
     /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1070px;
+    max-width: 870px;
     margin: 0 auto;
+    
 
 }
 
@@ -184,7 +185,7 @@ h1 {
 
 .grid-languages-item img {
     grid-column: 1;
-    width: 125;
+    width: 125px;
     height: 125px;
     grid-row: 1/3;
     align-self: end;
@@ -203,11 +204,14 @@ h1 {
 
 .project-item img {
     grid-column: 1;
-    width: 350px;
-    height: 350px;
+    border-radius: 5%;
+    width: 250px;
+    height: 250px;
     grid-row: 1/3;
     align-self: end;
     transition: box-shadow var(--transition-speed);
+    margin: 0 auto;
+    
 }
 
 .project-item a {
@@ -217,6 +221,7 @@ h1 {
     grid-column: 1;
     grid-row: 2;
     align-self: end;
+    margin: 0 auto;
 
 }
 
@@ -281,8 +286,9 @@ h1 {
     }
 
     .about-me-section h2 {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
     }
 
     .is-bottom-teste {

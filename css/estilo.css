@@ -11,11 +11,6 @@ body {
     color: #06202b;
 }
 
-img {
-    max-width: 100%;
-    height: 100%;
-}
-
 a {
     text-decoration: none;
 }
@@ -195,7 +190,6 @@ h1 {
     align-self: end;
     margin: 0 auto;
     display:block;
-    -webkit-appearance: none;
     background: var(--secondary-color);
     padding: 0px;
 }

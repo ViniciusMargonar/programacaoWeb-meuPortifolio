@@ -201,10 +201,7 @@ h1 {
 }
 
 progress::-webkit-progress-value {
-    /*background:var(--secondary-color);*/
-    background: linear-gradient(-45deg, #00E4DA, #8de0cc, #0b9d96);
-    background-size: 100% 100%;
-    animation: Gradient 1s ease infinite;
+    background:var(--secondary-color);
     border-radius: 3%;
 }
 

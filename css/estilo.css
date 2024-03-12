@@ -11,6 +11,11 @@ body {
     color: #06202b;
 }
 
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 a {
     text-decoration: none;
 }

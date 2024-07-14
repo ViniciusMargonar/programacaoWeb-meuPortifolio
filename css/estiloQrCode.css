@@ -16,7 +16,7 @@ body{
     animation: Gradient 15s ease infinite;
 }
 .wrapper{
-    height: 260px;
+    height: 330px;
     background: var(--third-color);
     max-width: 410px;
     border-radius: 7px;
@@ -24,7 +24,7 @@ body{
     transition: height 0.5s ease;
 }
 .wrapper.active{
-    height: 530px;
+    height: 610px;
 }
 header h1{
     text-align: center;
@@ -54,12 +54,16 @@ header p{
     border: 1px solid #999;
 }
 .form button{
-    color:var(--primary-color);
     cursor: pointer;
     margin-top: 20px;
     font-size: 17px;
     background: var(--secondary-color);
 }
+
+.form button:hover{
+    background: #82f6ec;
+}
+
 .wrapper .qr-code{
     display: flex;
     opacity: 0;

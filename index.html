@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +8,32 @@
     <link rel="icon" href="img/logo-icon.png" type="image/png">
 </head>
 
-<body>
+<body data-tema="light">
     <header class="site-header"> <!-- Cabeçalho, normalmente o menu -->
         <div class="container">
             <nav class="main-navigation">
                 <ul class="container">
-                    <img class="logo-pic" src="img/logo-icon.png">
-                    <li><a href="https://github.com/ViniciusMargonar">Contate-me</a></li>
-                    
+                    <img class="logo-pic" src="img/logo-icon.png" onclick="alterarTema()">
+                    <li><a onclick="mostrarModal()" id="button-contato">Contate-me</a></li>
+                    <li><a href="#" onclick="alterarTema()" id="linkAlterarTema">Alterar Tema</a></li>
                 </ul>
             </nav>
+            <dialog>
+                <div class="dialogCard">
+                    <h1>Meus contatos</h1>
+                    <p id="dados1">Email: viniciusmargonar2021@gmail.com</p>
+                    <p id="dados2">WhatsApp: (44) 4002-8922</p>
+                </div>
+                <div class="container-dialogButtons">
+                    <button onclick="fecharModal()" id="button-contato-fechar">Fechar</button>
+                    <button onclick="copiarDados()">Copiar Dados</button>
+                </div>
+            </dialog>
         </div>
     </header>
 
     <main class="container"> <!-- Conteúdo Principal do site -->
-
+        
         <!-- Section 1 -->
 
         <section class="section1-clearfix">
@@ -61,8 +71,8 @@
                     <div class="project-item teste-container-card">
                         <img src="img/projeto1.png">
                         <div class="card-texto">
-                            <h2>Beach Rent</h2>
-                            <h3>App para reserva e gerenciamento de quadras para esportes de areia.</h3>
+                            <h1>Beach Rent</h1>
+                            <p>App para reserva e gerenciamento de quadras para esportes de areia.</p>
                             <a href="https://github.com/ViniciusMargonar/programacaoWeb-meuPortifolio">Projeto Git Hub</a>
                             
                         </div>
@@ -70,16 +80,16 @@
                     <div class="project-item teste-container-card">
                         <img src="img/projeto2.png">
                         <div class="card-texto">
-                            <h2>Student Id</h2>
-                            <h3>App para criação e autenticação da carteirinha de estudante.</h3>                            
+                            <h1>Student Id</h1>
+                            <p>App para criação e autenticação da carteirinha de estudante.</p>                            
                             <a href="https://github.com/ViniciusMargonar/programacaoWeb-meuPortifolio">Projeto Git Hub</a>
                         </div>
                     </div>
                     <div class="project-item teste-container-card">
                         <img src="img/projeto3.png">
                         <div class="card-texto">
-                            <h2>Portfólio</h2>
-                            <h3>Portifólio Web desenvolvido em Programação Web.</h3>                            
+                            <h1>Portfólio</h1>
+                            <p>Portifólio Web desenvolvido em Programação Web.</p>                            
                             <a href="https://github.com/ViniciusMargonar/programacaoWeb-meuPortifolio">Projeto Git Hub</a>
                         </div>
                     </div>
@@ -150,6 +160,8 @@
                     src="img/footer2.png"></a>
                 </div>
     </footer>
+
+    <script src="css/index.js"></script>
 
 </body>
 

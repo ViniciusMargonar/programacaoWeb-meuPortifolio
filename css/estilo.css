@@ -7,7 +7,7 @@
 
 body {
     font-family: Europa, sans-serif;
-    background-color: var(--third-color);
+    background-color: var(--third-color, #e9e9e9);
     color: #06202b;
 }
 
@@ -28,18 +28,36 @@ h1 {
 
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0 , 0);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);    /* color of the scroll thumb */
+    border-radius: 20px; 
+  }
+
 .site-header {
-    background-color: var(--third-color);
+    background-color: var(--third-color, #e9e9e9);
     color: #06202b;
     padding: 5px 0;
 
 }
 
-.main-navigation ul {
+.main-navigation ul{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     list-style: none;
     padding: 50px 0;
+}
+
+
+.main-navigation li{
+    cursor: pointer;
 }
 
 .container ul {
@@ -49,7 +67,62 @@ h1 {
     align-items: center;
     justify-content: space-between;
     width: 85%;
+    
 
+}
+
+.container-dialogButtons {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-gap: 5px;    
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.container-dialogButtons button{
+    background-color: var(--secondary-color, #00E4DA);
+    border: none;
+    border-radius: 5px;
+    color: #06202b;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 50px;
+
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0 , 0.5);
+}
+
+dialog {
+    background-color: var(--third-color, #e9e9e9);
+    border: 1px solid var(--secondary-color, #00E4DA);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.dialogCard h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: xx-large;
+    color: var(--primary-color, #06202b);
+}
+
+.dialogCard p {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    font-size: large;
+    color: var(--primary-color, #06202b);
 }
 
 .container {
@@ -58,10 +131,10 @@ h1 {
 }
 
 .main-navigation a {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color, #00E4DA);
     border-radius: 30px 30px 30px 30px;
     border-width: 2px;
-    color: var(--secondary-color);
+    color: var(--secondary-color, #00E4DA);
     text-decoration: none;
     padding: 10px;
     font-size: large;
@@ -71,6 +144,7 @@ h1 {
     padding-top: 50px;
     font-size: 50px;
     text-align: center;
+    color: var(--primary-color, #06202b);
 
 }
 
@@ -79,6 +153,7 @@ h1 {
     font-size: 22px;
     justify-content: center;
     text-align: center;
+    color: var(--primary-color, #06202b);
 
 }
 
@@ -139,6 +214,7 @@ h1 {
     clear: both;
     height: 150px;
     width: 100%;
+    
 }
 
 .section3 h1 {
@@ -148,7 +224,6 @@ h1 {
     text-align: center;
     font-family: Europa, sans-serif;
     margin-top: -10rem;
-    color: var(--primary-color);
 
 }
 
@@ -162,6 +237,9 @@ h1 {
     margin: 0 auto;
 
 
+}
+.languages-h1 {
+    color: var(--primary-color, #06202b);
 }
 
 .grid-languages {
@@ -195,12 +273,12 @@ h1 {
     align-self: end;
     margin: 0 auto;
     display:block;
-    background: var(--secondary-color);
+    background: var(--secondary-color, #00E4DA);
     padding: 0px;
 }
 
 progress::-webkit-progress-value {
-    background:var(--secondary-color);
+    background:var(--secondary-color, #00E4DA);
     border-radius: 3%;
 }
 
@@ -221,12 +299,12 @@ progress::-webkit-progress-value {
 .teste-container-card:hover img {
     transform: scale(1.1);
     transition: transform 0.5s;
-    box-shadow: 0 0 15px var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-color, #06202b);
 }
 
 .card-texto {
     position: absolute;
-    background: var(--secondary-color);
+    background: var(--secondary-color, #00E4DA);
     opacity: 87%;
     width: 250px;
     height: 250px;
@@ -234,26 +312,26 @@ progress::-webkit-progress-value {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: var(--primary-color);
     visibility: hidden;
     border-radius: 5%;
     font-weight: bold
 }
 
-.card-texto h3 {
+.card-texto p {
     margin-bottom: 20px;
+    margin-top: -25px;
     font-size: 18px;
     text-align: center;
 }
 
-.card-texto h2 {
-    margin-bottom: 10px;
-    font-size: 40px;
+.card-texto h1 {
+    margin-top: 5px;
+    font-size: 30px;
 }
 
 .project-item a {
-    background: var(--primary-color);
-    color: var(--third-color);
+    background: var(--primary-color, #06202b);
+    color: var(--third-color, #e9e9e9);
     padding: 5px 0;
     grid-column: 1;
     grid-row: 2;
@@ -348,7 +426,6 @@ progress::-webkit-progress-value {
     
 }
 
-
 @media screen and (max-width: 768px) {
     .main-section p {
         margin-left: 20px;
@@ -357,11 +434,13 @@ progress::-webkit-progress-value {
 
     .main-navigation ul {
         flex-direction: column;
-        padding-top: 10px;
+        padding-top: 30px;
+        
     }
 
     .main-navigation li {
         padding-top: 20px;
+        padding-bottom: 10px;
         font-size: large;
     }
 
@@ -415,7 +494,7 @@ progress::-webkit-progress-value {
     .teste-container-card:hover img {
         transform: scale(1.0);
         transition: transform 0.5s;
-        box-shadow: 0 0 15px var(--primary-color);
+        box-shadow: 0 0 15px var(--primary-color, #06202b);
     }
 
     .teste-container-card:hover .card-texto {
@@ -464,4 +543,16 @@ progress::-webkit-progress-value {
     100% {
         background-position: 0% 50%;
     }
+}
+
+[data-tema='dark']{
+    --primary-color: #e9e9e9;
+    --secondary-color: #00E4DA;
+    --third-color: #06202b;    
+}
+
+[data-tema='light']{
+    --primary-color: #06202b;
+    --secondary-color: #00E4DA;
+    --third-color: #f0f0f0;
 }

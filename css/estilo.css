@@ -80,6 +80,10 @@ body::-webkit-scrollbar {
     padding-top: 30px;
 }
 
+.container-dialogButtons button:hover {
+    background: #82f6ec;
+}
+
 .container-dialogButtons button{
     background-color: var(--secondary-color, #00E4DA);
     border: none;
@@ -560,3 +564,45 @@ progress::-webkit-progress-value {
     --secondary-color: #00E4DA;
     --third-color: #f0f0f0;
 }
+
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100px;
+    background-color: var(--primary-color, #06202b);
+    color: var(--third-color, #f0f0f0);
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: var(--third-color, #f0f0f0);
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--third-color, #f0f0f0);
+    color: var(--primary-color, #06202b);
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+

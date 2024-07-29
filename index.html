@@ -12,14 +12,9 @@
     <header class="site-header"> <!-- Cabeçalho, normalmente o menu -->
         <div class="container">
             <nav class="main-navigation">
-                <ul class="container">
-                    
-                    <a class=containerLinkQrCode href="qrcode.html" >
-                        <img class="logo-pic" src="img/logo-icon.png">
-                    </a>
-                    
+                <ul class="container">                    
+                    <img class="logo-pic" src="img/logo-icon.png">                    
                     <li><a onclick="mostrarModal()" id="button-contato">Contate-me</a></li>
-                    <li><a href="#" onclick="alterarTema()" id="linkAlterarTema">Alterar Tema</a></li>
                 </ul>
             </nav>
             <dialog>
@@ -35,6 +30,18 @@
             </dialog>
         </div>
     </header>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" onclick="alterarTema()" id="linkAlterarTema">Alterar Tema</a></li>
+            <li><a class=containerLinkQrCode href="qrcode.html">Gerador QrCode</a></li>
+            <li><a href="todolist.html">To Do List</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </div>
+
 
     <main class="container"> <!-- Conteúdo Principal do site -->
 
